@@ -22,15 +22,8 @@ Abstrakcija – tai pagrindinė programavimo sąvoka, leidžianti supaprastinti 
 Abstrakcija taikoma tam, kad vieną kartą apibrėžus metodą kaip *tuščią* (naudojant pass), jį būtų galima vėliau iškviesti ir įgyvendinti konkrečiose klasėse, **neperrašinėjant** bendros struktūros.
 
 Štai ***abstrakcijos*** pavyzdys mano kode:
-![image](https://github.com/user-attachments/assets/982e8df5-af3d-4a75-8c05-89bd9751ebe0)
 
-> class Converter(ABC):
-> 
->  @abstractmethod
-> 
->  def convert_to(self,number):
-> 
->    pass
+![image](https://github.com/user-attachments/assets/982e8df5-af3d-4a75-8c05-89bd9751ebe0)
 
 ● Abstraction
 ● Inheritance
