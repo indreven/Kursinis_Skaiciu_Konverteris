@@ -24,10 +24,9 @@ Abstrakcija taikoma tam, kad vieną kartą apibrėžus metodą kaip *tuščią* 
 Štai ***abstrakcijos*** pavyzdys mano kode:
 
 > class Converter(ABC):
->
->  @abstractmethod
->  def convert_to(self,number):
->    pass
+> @abstractmethod
+> def convert_to(self,number):
+> pass
 
 ● Abstraction
 ● Inheritance
