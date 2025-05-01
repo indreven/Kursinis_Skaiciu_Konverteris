@@ -17,7 +17,7 @@ v. Konvertuotas skaičius bus rodomas konsolėje ir išsaugotas naujame faile *"
 
 ### Norint naudotis programa, pirmiausia reikia nurodyti, kokį konvertavimo tipą naudoti (**RomanToDecimal** arba **DecimalToRoman**) ir įrašyti skaičių. Programa šią informaciją panaudos konvertavimui ir pateiks rezultatą.
 
-### 2. Dėstymas
+## 2. Dėstymas
 
 + Abstrakcija
 + Paveldėjimas
@@ -68,7 +68,7 @@ c. Your code should demonstrate the use of composition
 and/or aggregation, and this should be explained in
 your report.
 
-### 3. Results and Summary
+## 3. Results and Summary
 
 a. See “Results” functional requirement
 
@@ -78,4 +78,4 @@ requirement
 c. How it would be possible to extend
 your application?
 
-### 4. Optional: Resources, references list.
+## 4. Optional: Resources, references list.
