@@ -8,10 +8,24 @@ b. Norint paleisti programą, pirmiausia reikia į tekstinį failą *"input.txt"
 
 c. Norint naudotis programa, pirmiausia reikia nurodyti, kokį konvertavimo tipą naudoti (**RomanToDecimal** arba **DecimalToRoman**) ir įrašyti skaičių. Programa šią informaciją panaudos konvertavimui ir pateiks rezultatą.
 
-### 2. Body/Analysis
+### 2. Dėstymas
 
-a. Explain how the program covers
-(implements) functional requirements
+a.  Polymorphism
+● Abstraction
+● Inheritance
+● Encapsulation
+Each of them should be described in the report,
+explaining what it is, how it works, and how it was
+used in code (tip: use code snippets/screenshots of
+your program).
+
+b. Used pattern should fit the program and be explained
+how it works and why it is most suitable compared to
+others
+
+c. Your code should demonstrate the use of composition
+and/or aggregation, and this should be explained in
+your report.
 
 ### 3. Results and Summary
 
