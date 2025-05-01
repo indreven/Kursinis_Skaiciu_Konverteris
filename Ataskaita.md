@@ -29,7 +29,7 @@ Abstrakcija taikoma tam, kad vieną kartą apibrėžus metodą kaip *tuščią* 
 > 
 >  def convert_to(self,number):
 > 
->   pass
+>    pass
 
 ● Abstraction
 ● Inheritance
