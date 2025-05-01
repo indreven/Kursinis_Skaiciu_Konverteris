@@ -10,12 +10,12 @@ c. Norint naudotis programa, pirmiausia reikia nurodyti, kokį konvertavimo tip�
 
 ### 2. Dėstymas
 
-+ Polymorfizmas
 + Abstrakcija
 + Paveldėjimas
++ Polymorfizmas
 + Enkapsuliacija
-  
-#### a.  Abstrakcija
+
+####  Abstrakcija
 
 Abstrakcija – tai pagrindinė programavimo sąvoka, leidžianti supaprastinti sudėtingus procesus ir sutelkti dėmesį į esmines detales.
 
@@ -25,7 +25,23 @@ Abstrakcija taikoma tam, kad vieną kartą apibrėžus metodą kaip *tuščią* 
 
 ![image](https://github.com/user-attachments/assets/982e8df5-af3d-4a75-8c05-89bd9751ebe0)
 
-● Abstraction
+Sukūriau abstraktų metodą ***convert_to***, tam, kad skirtingos klasės jį įgyvendintų savaip, išlaikydamos bendrą struktūrą.
+
+####  Paveldėjimas
+
+**Paveldėjimas** leidžia mums apibrėžti klasę, kuri paveldi visus metodus ir savybes iš kitos klasės.
+
++ Pirminė klasė yra klasė, iš kurios paveldima, dar vadinama bazine klase.
++ Vaikų klasė yra klasė, kuri paveldima iš kitos klasės, dar vadinama išvestine klase.
+
+***Paveldėjimas*** taikomas tam, kad *vaikinė* klasė galėtų greitai perimti anksčiau apibrėžtus metodus ir savybes iš *pirminės* klasės.
+
+Štai ***Paveldėjimo*** pavyzdys mano kode:
+
+![image](https://github.com/user-attachments/assets/b853d361-e2ea-4515-8a88-b58f9951e28b)
+
+Naujoji klasė pavadinimuu **"DecimalToRoman"** paveldi bazinę klasę **"Converter"** ir jos metodą *convert_to*.
+
 ● Inheritance
 ● Encapsulation
 Each of them should be described in the report,
