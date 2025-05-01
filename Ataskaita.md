@@ -10,7 +10,25 @@ c. Norint naudotis programa, pirmiausia reikia nurodyti, kokį konvertavimo tip�
 
 ### 2. Dėstymas
 
-a.  Polymorphism
++ Polymorfizmas
++ Abstrakcija
++ Paveldėjimas
++ Enkapsuliacija
+  
+#### a.  Abstrakcija
+
+Abstrakcija – tai pagrindinė programavimo sąvoka, leidžianti supaprastinti sudėtingus procesus ir sutelkti dėmesį į esmines detales.
+
+Abstrakcija taikoma tam, kad vieną kartą apibrėžus metodą kaip *tuščią* (naudojant pass), jį būtų galima vėliau iškviesti ir įgyvendinti konkrečiose klasėse, **neperrašinėjant** bendros struktūros.
+
+Štai ***abstrakcijos*** pavyzdys mano kode:
+
+> class Converter(ABC):
+>
+>  @abstractmethod
+>  def convert_to(self,number):
+>    pass
+
 ● Abstraction
 ● Inheritance
 ● Encapsulation
