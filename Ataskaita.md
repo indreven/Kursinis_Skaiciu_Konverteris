@@ -6,9 +6,13 @@
 
 #### Norint paleisti programą:
 i. Pirmiausia reikia atsidaryti tekstinį failą *"input.txt"*
+
 ii. Jame įrašyti, kurį konverterį *('RomanToDecimal' ar 'DecimalToRoman')* norite naudoti
+
 iii. Naujoje eilutėje įrašyti skaičių, kurį norite konvertuoti. 
+
 iv. Paleisti programą
+
 v. Konvertuotas skaičius bus rodomas konsolėje ir išsaugotas naujame faile *"output.txt"*.
 
 #### Norint naudotis programa, pirmiausia reikia nurodyti, kokį konvertavimo tipą naudoti (**RomanToDecimal** arba **DecimalToRoman**) ir įrašyti skaičių. Programa šią informaciją panaudos konvertavimui ir pateiks rezultatą.
