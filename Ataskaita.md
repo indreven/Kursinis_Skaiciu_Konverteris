@@ -4,7 +4,7 @@
  
 a. Mano sukūrta programa  - **tai skaičių konverteris**, kuris konvertuoja skaičius tarp ***romėniškų*** ir ***dešimtainių*** skaičiavimo sistemų.
 
-b. Norint paleisti programą, pirmiausia turi į teksto failą *"input.txt"* įrašyti kokį konverterį norėsite naudoti. Paleidus programą, konvertuotas skaičius bus rodomas konsolėje ir išsaugotas naujame faile *"output.txt"*.
+b. Norint paleisti programą, pirmiausia reikia į tekstinį failą *"input.txt"* įrašyti, kurį konverterį norite naudoti, o kitoje eilutėje – skaičių, kurį norite konvertuoti. Paleidus programą, konvertuotas skaičius bus rodomas konsolėje ir išsaugotas naujame faile *"output.txt"*.
 
 c. Norint naudotis programa, pirmiausia reikia nurodyti, kokį konvertavimo tipą naudoti (**RomanToDecimal** arba **DecimalToRoman**) ir įrašyti skaičių. Programa šią informaciją panaudos konvertavimui ir pateiks rezultatą.
 
