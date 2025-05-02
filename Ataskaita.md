@@ -57,7 +57,7 @@ Naujoji klasė pavadinimuu **"DecimalToRoman"** paveldi bazinę klasę **"Conver
 
 ***Polimorfzimas*** taikomas tam, kad tas pats metodo pavadinimas galėtų būti naudojamas skirtingose klasėse, tačiau kiekvienoje klasėje jis veiktų pagal individualų poreikį – nereikia kurti atskirų metodų su skirtingais pavadinimais.
 
-#### Štai ***polimorfizmo*** pavyzdys mano kode:
+##### Štai ***polimorfizmo*** pavyzdys mano kode:
 
 Klasėje **DecimalToRoman** metodą *convert_to* pakeičiame pagal poreikius.
 
@@ -72,9 +72,9 @@ Dar vienas pavyzdys kaip naudojame polimorfizmą klasėje **RomanToDecimal**.
 **Inkapsuliacija** – užtikrina, kad objekto naudotojas negali pakeisti objekto būsenos nenumatytu būdu. Tik objekto vidiniai metodai turi galimybę keisti objekto būseną.
 
 Yra keli prieigos matomumai:
-> Public
-> Protected 
-> Private
++ Public
++ Protected 
++ Private
 
 ***Inkapsuliacija taikoma tam, kad:***
 
@@ -84,27 +84,39 @@ Yra keli prieigos matomumai:
 >
 > Užtikrinti duomenų vientisuma.
 
-#### *Inkapsuliacijos* pavyzdys mano kode:
+##### *Inkapsuliacijos* pavyzdys mano kode:
 
-Kodo eilutė self._converter 
+Kodo eilutė 'self._converter' yra "protected" tipo atributas, tam, kad apsaugotų nuo nenumatytų klaidų, jei kažkas kitas bandytų pakeisti konverterį „rankiniu būdu“ iš kitos vietos.
 
 ![image](https://github.com/user-attachments/assets/fc371645-fca6-432e-981a-40e396658618)
 
+## Design pattern
 
-● Inheritance
-● Encapsulation
-Each of them should be described in the report,
-explaining what it is, how it works, and how it was
-used in code (tip: use code snippets/screenshots of
-your program).
+Savo kode naudoju design pattern **Factory Method**.
 
-b. Used pattern should fit the program and be explained
-how it works and why it is most suitable compared to
-others
+**Factory metodas** – tai kūrybinis dizaino šablonas, kuris išsprendžia objektų kūrimo problemą nenurodant konkrečių jų klasių, leidžiant sprendimą dėl to, kokį objektą sukurti, priimti vykdymo metu.
 
-c. Your code should demonstrate the use of composition
-and/or aggregation, and this should be explained in
-your report.
+***Factory design pattern*** pavaizdavimas mano kode:
+
+*if* teiginys remdamasis *converter_type* reikšme nusprendžia kokį objektą sukurt vykdymo metu.
+
+![image](https://github.com/user-attachments/assets/f0b2a6f5-daba-4cc2-aaba-3ef304a4c074)
+
+### Kodėl pasirinkau 'Factory Method'?
+
+Pasirinkau Factory Method, todėl, nes man reikėjo lankstaus būdo sukurti vieną iš kelių galimų objektų priklausomai nuo naudotojo pasirinkimo. Šis šablonas leidžia tai padaryti nesusiejant kodo su konkrečiomis klasėmis ir leidžia lengvai išplėsti sistemą ateityje.
+
+## Kompozicija
+
+Savo kode, naudojau kompoziją.
+
+**Kompozicija** - tai objektinio programavimo principas, kai viena klasė savo viduje turi kitos klasės objektą ir naudoja jį savo veikimui. Toks ryšys vadinamas „yra sudaryta iš“ (angl. has-a) tipo ryšiu.
+
+Štai pavyzdys mano kode:
+
+Klasėje 'ConverterApp' sukuriamas kitos klasės objektas, kuris atlieka skaičiavimus ir yra **būtinas** programos veikimui.
+
+![image](https://github.com/user-attachments/assets/244eb01c-6604-45aa-b6d2-5c1b8f29eb26)
 
 ## 3. Results and Summary
 
@@ -119,46 +131,5 @@ Sukūriau abstraktų metodą ***convert_to***, tam, kad skirtingos klasės jį �
 
 ![image](https://github.com/user-attachments/assets/982e8df5-af3d-4a75-8c05-89bd9751ebe0)
 
-####  Paveldėjimas
-
-**Paveldėjimas** leidžia mums apibrėžti klasę, kuri paveldi visus metodus ir savybes iš kitos klasės.
-
-+ Pirminė klasė yra klasė, iš kurios paveldima, dar vadinama bazine klase.
-+ Vaikų klasė yra klasė, kuri paveldima iš kitos klasės, dar vadinama išvestine klase.
-
-***Paveldėjimas*** taikomas tam, kad *vaikinė* klasė galėtų greitai perimti anksčiau apibrėžtus metodus ir savybes iš *pirminės* klasės.
-
-##### Štai ***paveldėjimo*** pavyzdys mano kode:
-
-Naujoji klasė pavadinimuu **"DecimalToRoman"** paveldi bazinę klasę **"Converter"** ir jos metodą *convert_to*.
-
-![image](https://github.com/user-attachments/assets/b853d361-e2ea-4515-8a88-b58f9951e28b)
-
-
-
-● Inheritance
-● Encapsulation
-Each of them should be described in the report,
-explaining what it is, how it works, and how it was
-used in code (tip: use code snippets/screenshots of
-your program).
-
-b. Used pattern should fit the program and be explained
-how it works and why it is most suitable compared to
-others
-
-c. Your code should demonstrate the use of composition
-and/or aggregation, and this should be explained in
-your report.
-
-## 3. Results and Summary
-
-a. See “Results” functional requirement
-
-b. See “Conclusions” functional
-requirement
-
-c. How it would be possible to extend
-your application?
 
 ## 4. Optional: Resources, references list.
