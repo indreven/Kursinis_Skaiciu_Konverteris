@@ -22,7 +22,7 @@ v. Konvertuotas skaičius bus rodomas konsolėje ir išsaugotas naujame faile *"
 + Abstrakcija
 + Paveldėjimas
 + Polymorfizmas
-+ Enkapsuliacija
++ Inkapsuliacija
 
 ####  Abstrakcija
 
@@ -34,7 +34,7 @@ Abstrakcija taikoma tam, kad vieną kartą apibrėžus metodą kaip *tuščią* 
 
 Sukūriau abstraktų metodą ***convert_to***, tam, kad skirtingos klasės jį įgyvendintų savaip, išlaikydamos bendrą struktūrą.
 
-![image](https://github.com/user-attachments/assets/c48c4d06-8670-4145-b451-4ba919c59c6d)
+![image](https://github.com/user-attachments/assets/34d408c8-d4e3-4d5d-8014-ac16f903d829)
 
 ####  Paveldėjimas
 
@@ -49,7 +49,7 @@ Sukūriau abstraktų metodą ***convert_to***, tam, kad skirtingos klasės jį �
 
 Naujoji klasė pavadinimuu **"DecimalToRoman"** paveldi bazinę klasę **"Converter"** ir jos metodą *convert_to*.
 
-![image](https://github.com/user-attachments/assets/05eb53d7-b0aa-4bd5-92ff-6bbb7f732445)
+![image](https://github.com/user-attachments/assets/daf2df6c-50ec-43b9-bf49-632eab86482b)
 
 #### Polimorfizmas
 
@@ -59,9 +59,17 @@ Naujoji klasė pavadinimuu **"DecimalToRoman"** paveldi bazinę klasę **"Conver
 
 #### Štai ***polimorfizmo*** pavyzdys mano kode:
 
-Seniau gautą metodą *convert_to* pakeičiame pagal poreikius.
+Klasėje **DecimalToRoman** metodą *convert_to* pakeičiame pagal poreikius.
 
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/c72cd172-c3fa-40bf-a27b-3f04d4b350c9)
+
+Dar vienas pavyzdys kaip naudojame polimorfizmą klasėje **RomanToDecimal**.
+
+![image](https://github.com/user-attachments/assets/40b67d48-d5de-4826-b76a-9eac7565f9af)
+
+#### Inkapsuliacija 
+
+**Inkapsuliacija** 
 
 ● Inheritance
 ● Encapsulation
