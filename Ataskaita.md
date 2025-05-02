@@ -69,7 +69,27 @@ Dar vienas pavyzdys kaip naudojame polimorfizmą klasėje **RomanToDecimal**.
 
 #### Inkapsuliacija 
 
-**Inkapsuliacija** 
+**Inkapsuliacija** – užtikrina, kad objekto naudotojas negali pakeisti objekto būsenos nenumatytu būdu. Tik objekto vidiniai metodai turi galimybę keisti objekto būseną.
+
+Yra keli prieigos matomumai:
+> Public
+> Protected 
+> Private
+
+***Inkapsuliacija taikoma tam, kad:***
+
+> Atributai ir metodai būtų tvarkingai paslėpti.
+>
+> Jų negalima būtų keisti tiesiogiai iš išorės, jei to nereikia.
+>
+> Užtikrinti duomenų vientisuma.
+
+#### *Inkapsuliacijos* pavyzdys mano kode:
+
+Kodo eilutė self._converter 
+
+![image](https://github.com/user-attachments/assets/fc371645-fca6-432e-981a-40e396658618)
+
 
 ● Inheritance
 ● Encapsulation
