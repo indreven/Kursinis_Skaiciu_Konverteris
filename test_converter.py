@@ -1,6 +1,9 @@
 import unittest
 from kursinis import DecimalToRoman, RomanToDecimal, ConverterApp
+
+
 class TestSimple(unittest.TestCase):
+
     def test_decimal_to_roman(self):
         converter = DecimalToRoman()
         result = converter.convert_to(11)
@@ -12,5 +15,7 @@ class TestSimple(unittest.TestCase):
         result = converter.convert_to('XIV')
         print("\nRoman 'XIV' =>", result)
         self.assertEqual(result, 14)
-if __name__ == '__main__': 
+
+
+if __name__ == '__main__':
     unittest.main(verbosity=2)
