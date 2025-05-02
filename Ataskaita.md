@@ -122,15 +122,11 @@ Klasėje 'ConverterApp' sukuriamas kitos klasės objektas, kuris atlieka skaiči
 
 ### Rezultatai:
 
->Programa sėkmingai konvertuoja skaičius tarp romėniškų ir dešimtainių pagal naudotojo įvestį tekstiniame faile.
->
->Naudojant Factory Method šabloną, objekto sukūrimas tapo aiškesnis ir lankstesnis, tačiau reikėjo spręsti, kur tiksliai patalpinti pasirinkimo logiką.
->
->Vienas iš iššūkių buvo teisingas naudotojo įvesties tikrinimas, ypač siekiant atmesti netinkamus romėniškus simbolius ar per didelius skaičius.
->
->Reikėjo kruopščiai valdyti klaidas, kad naudotojui būtų pateikiamos aiškios žinutės – tam naudoti try-except blokai.
->
->Rezultatas rašomas į failą, taip parodant failų išvesties naudojimą, tačiau reikėjo atidžiai apdoroti eilučių skaičių, kad išvengtume IndexError.
++ Programa sėkmingai konvertuoja skaičius tarp romėniškų ir dešimtainių pagal naudotojo įvestį tekstiniame faile.
++ Naudojant Factory Method šabloną, objekto sukūrimas tapo aiškesnis ir lankstesnis, tačiau reikėjo spręsti, kur tiksliai patalpinti pasirinkimo logiką.
++ Vienas iš iššūkių buvo teisingas naudotojo įvesties tikrinimas, ypač siekiant atmesti netinkamus romėniškus simbolius ar per didelius skaičius.
++ Reikėjo kruopščiai valdyti klaidas, kad naudotojui būtų pateikiamos aiškios žinutės – tam naudoti try-except blokai.
++ Rezultatas rašomas į failą, taip parodant failų išvesties naudojimą, tačiau reikėjo atidžiai apdoroti eilučių skaičių, kad išvengtume IndexError.
 
 ### Išvados:
 
