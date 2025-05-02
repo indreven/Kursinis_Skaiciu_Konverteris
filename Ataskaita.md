@@ -147,3 +147,11 @@ b. See “Conclusions” functional
 + Ateityje galima integruoti programą į didesnę sistemą ar naudoti kaip mokomąją priemonę objektinio programavimo principams aiškinti.
 
 ## 4. Optional: Resources, references list.
+
+https://lt.wikipedia.org/wiki/Objektinis_programavimas
+https://peps.python.org/pep-0008/
+https://refactoring.guru/design-patterns/python
+https://www.markdownguide.org/basic-syntax/
+https://www.geeksforgeeks.org/factory-method-python-design-patterns/
+https://realpython.com/inheritance-composition-python/
+https://lt.wikipedia.org/wiki/Polimorfizmas_(programavime)
