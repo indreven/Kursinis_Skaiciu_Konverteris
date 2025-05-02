@@ -47,7 +47,7 @@ Sukūriau abstraktų metodą ***convert_to***, tam, kad skirtingos klasės jį �
 
 #### Štai ***paveldėjimo*** pavyzdys mano kode:
 
-Naujoji klasė pavadinimuu **"DecimalToRoman"** paveldi bazinę klasę **"Converter"** ir jos metodą *convert_to*.
+Naujoji klasė pavadinimu **"DecimalToRoman"** paveldi bazinę klasę **"Converter"** ir jos metodą *convert_to*.
 
 ![image](https://github.com/user-attachments/assets/daf2df6c-50ec-43b9-bf49-632eab86482b)
 
@@ -118,18 +118,32 @@ Klasėje 'ConverterApp' sukuriamas kitos klasės objektas, kuris atlieka skaiči
 
 ![image](https://github.com/user-attachments/assets/244eb01c-6604-45aa-b6d2-5c1b8f29eb26)
 
-## 3. Results and Summary
+## 3. Rezultatai ir išvados
 
-a. See “Results” functional requirement
+### Rezultatai:
 
+>Programa sėkmingai konvertuoja skaičius tarp romėniškų ir dešimtainių pagal naudotojo įvestį tekstiniame faile.
+>
+>Naudojant Factory Method šabloną, objekto sukūrimas tapo aiškesnis ir lankstesnis, tačiau reikėjo spręsti, kur tiksliai patalpinti pasirinkimo logiką.
+>
+>Vienas iš iššūkių buvo teisingas naudotojo įvesties tikrinimas, ypač siekiant atmesti netinkamus romėniškus simbolius ar per didelius skaičius.
+>
+>Reikėjo kruopščiai valdyti klaidas, kad naudotojui būtų pateikiamos aiškios žinutės – tam naudoti try-except blokai.
+>
+>Rezultatas rašomas į failą, taip parodant failų išvesties naudojimą, tačiau reikėjo atidžiai apdoroti eilučių skaičių, kad išvengtume IndexError.
+
+### Išvados:
+
++ Sukurta veikianti programa, kuri konvertuoja skaičius tarp romėniškų ir dešimtainių, naudojant abstrakciją, paveldėjimą, polimorfizmą ir kompoziciją.
++ Pritaikius Factory Method principą, programa tapo lanksti ir lengvai plečiama – vartotojas gali pasirinkti, kokį konverterį naudoti.
++ Įgyvendintas failų skaitymas ir rašymas, leidžiantis naudotojui įvesti duomenis per tekstinį failą ir gauti rezultatą įrašytą į kitą failą.
++ Programos struktūra leidžia ją lengvai papildyti naujais konvertavimo tipais ar patobulinti esamus.
 b. See “Conclusions” functional
-requirement
 
-##### Štai ***abstrakcijos*** pavyzdys mano kode:
+### Ateities perspektyvos:
 
-Sukūriau abstraktų metodą ***convert_to***, tam, kad skirtingos klasės jį įgyvendintų savaip, išlaikydamos bendrą struktūrą.
-
-![image](https://github.com/user-attachments/assets/982e8df5-af3d-4a75-8c05-89bd9751ebe0)
-
++ Galima pridėti papildomų konvertavimo funkcijų (pvz., dvejetainiai skaičiai).
++ Galėtų būti sukurta grafinė vartotojo sąsaja (GUI) patogesniam naudojimui.
++ Ateityje galima integruoti programą į didesnę sistemą ar naudoti kaip mokomąją priemonę objektinio programavimo principams aiškinti.
 
 ## 4. Optional: Resources, references list.
