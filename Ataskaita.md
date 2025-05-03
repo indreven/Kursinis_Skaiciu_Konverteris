@@ -1,5 +1,3 @@
-# MARKDOWN
-
 # 1. Įžanga
  
 ### Mano sukūrta programa  - **tai skaičių konverteris**, kuris konvertuoja skaičius tarp ***romėniškų*** ir ***dešimtainių*** skaičiavimo sistemų.
