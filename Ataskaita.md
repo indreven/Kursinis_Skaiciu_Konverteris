@@ -5,15 +5,18 @@
 ### Mano sukūrta programa  - **tai skaičių konverteris**, kuris konvertuoja skaičius tarp ***romėniškų*** ir ***dešimtainių*** skaičiavimo sistemų.
 
 ### Norint paleisti programą:
-i. Pirmiausia reikia atsidaryti tekstinį failą *"input.txt"*
 
-ii. Jame įrašyti, kurį konverterį *('RomanToDecimal' ar 'DecimalToRoman')* norite naudoti
+i. Atsisiųsti 'kursinis.py' bei 'input.txt'.
 
-iii. Naujoje eilutėje įrašyti skaičių, kurį norite konvertuoti. 
+ii. Atsidaryti tekstinį failą *"input.txt"*
 
-iv. Paleisti programą
+iii. Jame įrašyti, kurį konverterį *('RomanToDecimal' ar 'DecimalToRoman')* norite naudoti
 
-v. Konvertuotas skaičius bus rodomas konsolėje ir išsaugotas naujame faile *"output.txt"*.
+iv. Naujoje eilutėje įrašyti skaičių, kurį norite konvertuoti. 
+
+v. Paleisti programą
+
+vi. Konvertuotas skaičius bus rodomas konsolėje ir išsaugotas naujame faile *"output.txt"*.
 
 ### Norint naudotis programa, pirmiausia reikia nurodyti, kokį konvertavimo tipą naudoti (**RomanToDecimal** arba **DecimalToRoman**) ir įrašyti skaičių. Programa šią informaciją panaudos konvertavimui ir pateiks rezultatą.
 
