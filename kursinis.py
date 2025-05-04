@@ -44,37 +44,8 @@ class RomanToDecimal(Converter):
         'C': 100, 'D': 500, 'M': 1000
     }
 
-    def is_valid_roman(self, number):
-        number = number.upper()
-
-        invalid_repeats = [
-            'IIII', 'VV', 'XXXX', 'LL', 'CCCC', 'DD', 'MMMM'
-        ]
-
-        invalid_numbers = [
-            'IIV', 'IIX', 'IL', 'IC', 'ID', 'IM',
-            'VX', 'VL', 'VC', 'VD', 'VM',
-            'XXL', 'XXC', 'XD', 'XM',
-            'LC', 'LD', 'LM',
-            'CCD', 'CCM', 'CDM',
-            'DM',
-            'IVX', 'IXC', 'XCM', 'ICM',
-            'IVI', 'IXI', 'IXV', 'IXL',
-            'XLX', 'XLL', 'XCX', 'XCC',
-            'CDC', 'CDD', 'CMC', 'CMD', 'CMM',
-            'VIV', 'VIX', 'IXX', 'IIX'
-        ]
-
-        for pattern in invalid_repeats + invalid_numbers:
-            if pattern in number:
-                return False
-        return True
-
     def convert_to(self, number):
         number = number.upper()
-
-        if not self.is_valid_roman(number):
-            raise ValueError(f'Invalid number: {number}')
 
         for char in number:
             if char not in self.roman_conversion:
@@ -94,9 +65,14 @@ class RomanToDecimal(Converter):
             raise ValueError(
                 "Converted number is too large. Roman numerals go up to 3999."
             )
+        check_decimal_to_roman = DecimalToRoman()
+        check_roman_from_decimal = check_decimal_to_roman.covert_to(total)
+
+        if check_roman_from_decimal != number:
+            raise ValueError("Invalid Roman number written.")
 
         return total
-
+        
 
 class ConverterApp:
 
