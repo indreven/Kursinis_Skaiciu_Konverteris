@@ -17,7 +17,11 @@ class DecimalToRoman(Converter):
     ]
 
     def convert_to(self, number):
-        number = int(number)
+        try:
+            number = int(number)
+        except ValueError:
+            raise ValueError("Input must be a valid integer.")
+
         if number <= 0:
             raise ValueError("Number must be a positive integer.")
         if number > 3999:
@@ -44,8 +48,7 @@ class RomanToDecimal(Converter):
         number = number.upper()
 
         invalid_repeats = [
-            'IIII', 'VV', 'XXXX', 'LL',
-            'CCCC', 'DD', 'MMMM'
+            'IIII', 'VV', 'XXXX', 'LL', 'CCCC', 'DD', 'MMMM'
         ]
 
         invalid_numbers = [
@@ -55,7 +58,11 @@ class RomanToDecimal(Converter):
             'LC', 'LD', 'LM',
             'CCD', 'CCM', 'CDM',
             'DM',
-            'IVX', 'IXC', 'XCM', 'ICM'
+            'IVX', 'IXC', 'XCM', 'ICM',
+            'IVI', 'IXI', 'IXV', 'IXL',
+            'XLX', 'XLL', 'XCX', 'XCC',
+            'CDC', 'CDD', 'CMC', 'CMD', 'CMM',
+            'VIV', 'VIX', 'IXX', 'IIX'
         ]
 
         for pattern in invalid_repeats + invalid_numbers:
@@ -67,11 +74,11 @@ class RomanToDecimal(Converter):
         number = number.upper()
 
         if not self.is_valid_roman(number):
-            raise ValueError(f"Invalid number: {number}")
+            raise ValueError(f'Invalid number: {number}')
 
         for char in number:
             if char not in self.roman_conversion:
-                raise ValueError(f"Invalid symbol: '{char}'")
+                raise ValueError(f"Invalid number: '{char}'")
 
         total = 0
         prev = 0
@@ -85,8 +92,7 @@ class RomanToDecimal(Converter):
 
         if total > 3999:
             raise ValueError(
-                "Converted number is too large. "
-                "Roman numerals go up to 3999."
+                "Converted number is too large. Roman numerals go up to 3999."
             )
 
         return total
@@ -101,8 +107,7 @@ class ConverterApp:
             self._converter = RomanToDecimal()
         else:
             raise ValueError(
-                "Invalid converter, choose "
-                "(DecimalToRoman) or (RomanToDecimal)"
+                "Invalid converter, choose (DecimalToRoman) or (RomanToDecimal)"
             )
 
     def convert(self, number):
@@ -131,6 +136,11 @@ def main():
         print('File "input.txt" not found.')
     except IndexError:
         print('File must contain two lines: converter type and number.')
+
+
+if __name__ == "__main__":
+    main()
+
 
 
 if __name__ == "__main__":
