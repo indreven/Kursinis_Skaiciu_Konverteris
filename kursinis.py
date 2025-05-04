@@ -69,7 +69,7 @@ class RomanToDecimal(Converter):
         decimal_to_roman = DecimalToRoman()
         roman_from_decimal = decimal_to_roman.convert_to(total)
 
-        if check_roman_from_decimal != number:
+        if roman_from_decimal != number:
             raise ValueError("Invalid Roman number written.")
 
         return total
