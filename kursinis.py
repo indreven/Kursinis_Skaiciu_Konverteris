@@ -66,7 +66,7 @@ class RomanToDecimal(Converter):
                 "Converted number is too large. Roman numerals go up to 3999."
             )
         check_decimal_to_roman = DecimalToRoman()
-        check_roman_from_decimal = check_decimal_to_roman.covert_to(total)
+        check_roman_from_decimal = check_decimal_to_roman.convert_to(total)
 
         if check_roman_from_decimal != number:
             raise ValueError("Invalid Roman number written.")
