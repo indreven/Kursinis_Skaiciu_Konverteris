@@ -78,7 +78,7 @@ class RomanToDecimal(Converter):
 
         for char in number:
             if char not in self.roman_conversion:
-                raise ValueError(f"Invalid number: '{char}'")
+                raise ValueError(f"Invalid Roman numeral character: '{char}'")
 
         total = 0
         prev = 0
