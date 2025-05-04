@@ -56,7 +56,7 @@ Naujoji klasė pavadinimu **"DecimalToRoman"** paveldi bazinę klasę **"Convert
 
 **Polimorfizmas** - objektinio programavimo principas, leidžiantis skirtingoms klasėms turėti tą patį metodo pavadinimą, bet skirtingą įgyvendinimą (elgseną).
 
-***Polimorfzimas*** taikomas tam, kad tas pats metodo pavadinimas galėtų būti naudojamas skirtingose klasėse, tačiau kiekvienoje klasėje jis veiktų pagal individualų poreikį – nereikia kurti atskirų metodų su skirtingais pavadinimais.
+***Polimorfizmas*** taikomas tam, kad tas pats metodo pavadinimas galėtų būti naudojamas skirtingose klasėse, tačiau kiekvienoje klasėje jis veiktų pagal individualų poreikį – nereikia kurti atskirų metodų su skirtingais pavadinimais.
 
 #### Štai ***polimorfizmo*** pavyzdys mano kode:
 
@@ -82,7 +82,7 @@ Yra keli prieigos matomumai:
 ***Inkapsuliacija taikoma tam, kad:***
 
 + Atributai ir metodai būtų tvarkingai paslėpti.
-+ Jų negalima būtų keisti tiesiogiai iš išorės, jei to nereikia.
++ Jų nebūtų galima keisti tiesiogiai iš išorės, jei to nereikia.
 + Užtikrinti duomenų vientisuma.
 
 #### *Inkapsuliacijos* pavyzdys mano kode:
@@ -126,7 +126,7 @@ Klasėje 'ConverterApp' sukuriamas kitos klasės objektas, kuris atlieka skaiči
 + Programa sėkmingai konvertuoja skaičius tarp romėniškų ir dešimtainių pagal naudotojo įvestį tekstiniame faile.
 + Naudojant Factory Method šabloną, objekto sukūrimas tapo aiškesnis ir lankstesnis, tačiau reikėjo spręsti, kur tiksliai patalpinti pasirinkimo logiką.
 + Vienas iš iššūkių buvo teisingas naudotojo įvesties tikrinimas, ypač siekiant atmesti netinkamus romėniškus simbolius ar per didelius skaičius.
-+ Reikėjo kruopščiai valdyti klaidas, kad naudotojui būtų pateikiamos aiškios žinutės – tam naudoti try-except blokai.
++ Reikėjo kruopščiai valdyti klaidas, kad naudotojui būtų pateikiamos aiškios žinutės – tam buvo naudojami try-except blokai.
 + Rezultatas rašomas į failą, taip parodant failų išvesties naudojimą, tačiau reikėjo atidžiai apdoroti eilučių skaičių, kad išvengtume IndexError.
 
 ### Išvados:
