@@ -135,7 +135,7 @@ Klasėje 'ConverterApp' sukuriamas kitos klasės objektas, kuris atlieka skaiči
 + Pritaikius Factory Method principą, programa tapo lanksti ir lengvai plečiama – vartotojas gali pasirinkti, kokį konverterį naudoti.
 + Įgyvendintas failų skaitymas ir rašymas, leidžiantis naudotojui įvesti duomenis per tekstinį failą ir gauti rezultatą įrašytą į kitą failą.
 + Programos struktūra leidžia ją lengvai papildyti naujais konvertavimo tipais ar patobulinti esamus.
-b. See “Conclusions” functional
+
 
 ### Ateities perspektyvos:
 
